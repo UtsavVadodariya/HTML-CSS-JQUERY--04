@@ -1,0 +1,765 @@
+*{
+  margin: 0px ;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Parent-loading {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: #0d0d0e;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: load 4s linear forwards;
+  }
+
+  @keyframes load {
+    form {
+      display: block;
+    }
+
+    to {
+      display: none;
+    }
+  }
+
+  .loding-animation-holder {
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    position: relative;
+  }
+
+  .loading-animator {
+    width: 50%;
+    height: 50%;
+    float: left;
+    border-radius: 50%;
+    background: #c4b422e3;
+    transform: rotate(0deg);
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+  }
+
+  .loading-animator:nth-child(1) {
+    transform-origin: bottom right;
+    animation: loading 3s cubic-bezier(.46, -0.1, .2, 1.5) infinite;
+  }
+
+  .loading-animator:nth-child(2) {
+    transform-origin: bottom left;
+    animation: loading 3s 0.3s cubic-bezier(.46, -0.1, .2, 1.5) infinite;
+  }
+
+  .loading-animator:nth-child(4) {
+    transform-origin: top left;
+    animation: loading 3s 0.4s cubic-bezier(.46, -0.1, .2, 1.5) infinite;
+  }
+
+  .loading-animator:nth-child(3) {
+    transform-origin: top right;
+    animation: loading 3s 0.5s cubic-bezier(.46, -0.1, .2, 1.5) infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+
+    25% {
+      transform: rotate(90deg);
+      opacity: 0;
+    }
+
+    35% {
+      transform: rotate(-90deg);
+      opacity: 0;
+    }
+
+    65% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+  .middle-circle {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 47.5px;
+    left: 47.5px;
+    border-radius: 100%;
+    border: 1px solid #000;
+    background: #FFEB3B;
+  }
+
+  .content {
+    padding: 20px;  
+    z-index: 1000;
+    position: fixed;
+  }
+
+  .content h1 {
+    color: #fff;
+  }
+
+  .content p {
+    color: #666;
+}
+.navbar {
+  padding-top: 1%;
+  margin-left: 190px;
+}
+
+ul {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 50%;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17.4px;
+  color: #222222;
+  font-family: 'Mulish', sans-serif;
+  padding-bottom: -50px;
+}
+
+#nav {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  top: 75%;
+  margin-top: -1px;
+  background: #000;
+  font-size: 15.4px;
+
+}
+
+#nav:hover:after {
+  background: #000;
+  height: 1px;
+  width: 70%; 
+  -webkit-transition: width 0.2s cubic-bezier(.87, -.41, .19, 1.44);
+  transition: width 0.8s cubic-bezier(.87, -.41, .19, 1.44);
+  left:10.0px;
+}
+
+
+.infoBox {
+  opacity: 0.55;
+  background-color: #333;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  width: 20%;
+  position: fixed;
+  float: left;
+  top: 0;
+  left: 20px;
+  text-align: right;
+}
+.infoBox p {
+  font-size: .75em;
+}
+.infoBox:hover {
+  opacity: .85;
+}
+.infoBox h3, .infoBox p {
+  margin: 5px 0 10px 0;
+  text-align: right;
+}
+.infoBox span {
+  margin-top: 10px;
+  padding: 4px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+}
+.atag2 {
+  color: #3498db;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main1{
+    height: 868px;
+    width: 100%;
+}
+header{
+    height: 82px;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+}
+ 
+.im1{
+    position: relative;
+    height: 60px;
+    width: 50px;
+    left: -100px;
+}
+
+.d1{
+  height: 100%;
+  width: 1095px;
+  position: relative;
+  top: -80px;
+  z-index: 1;
+  background-image: url(https://xstore.b-cdn.net/elementor/demos/home-decor/wp-content/uploads/sites/9/2019/09/img-01.jpg);
+  background-position: right;
+  padding-left: 200px;
+  padding-top: 370px;
+}
+.d1 span{
+  font-size: 13px;
+  font-family: 'Mulish', sans-serif;
+  color: #555555;
+}
+.d1 h1{
+  font-size: 42px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 45px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+.d1 a{
+  font-size: 12px;
+  font-family: 'Mulish', sans-serif;
+  color: black;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+  margin-top: 20px;
+}
+.d2{
+  height: 505px;
+  width: 370px;
+  position: relative;
+  top: -800px;
+  left: 1140px;
+  background-size: cover;
+  background-image: url(https://xstore.b-cdn.net/elementor/demos/home-decor/wp-content/uploads/sites/9/2019/09/img-02.jpg);
+}
+.d2-1{
+  position: relative;
+  top: -750px;
+  left: 1142px;
+  font-size: 13px;
+  font-family: 'Mulish', sans-serif;
+  color: #555555;
+  width: 116.35px;
+
+}
+.d2-2{
+  font-size: 28px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  position: relative;
+  top: -730px;
+  left: 1140px;
+  width: 354px;
+}
+
+
+
+
+
+
+
+
+
+.main2{
+  height: 456px;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+}
+.d3{
+  height: 455.75px;
+  width: 886.3px;
+  background-image: url(https://xstore.b-cdn.net/elementor/demos/home-decor/wp-content/uploads/sites/9/2019/09/img-03.png);
+  background-size: cover;
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: float 5s ease-in infinite;
+	img { width: 100%; height: auto; }
+
+
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+.d4{
+  height: 100%;
+  width: 501.3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d5{
+  height: 257.6px;
+  width: 100%;
+}
+.d5 h2{
+  font-size: 42px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #222222;
+  margin-bottom: 10px;
+}
+.d5 p{
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.d5 a{
+  font-size: 12px;
+  font-family: 'Mulish', sans-serif;
+  color: #222222;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+
+
+
+.main3{
+  height: 456px;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: right;
+}
+.d8{
+  height: 455.75px;
+  width: 880.3px;
+  background-image: url(https://xstore.b-cdn.net/elementor/demos/home-decor/wp-content/uploads/sites/9/2019/09/img-04.png);
+  background-size: cover;
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: float 5s ease-in infinite;
+	img { width: 100%; height: auto; }
+  float: right;
+
+
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-25px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+.d6{
+  height: 100%;
+  width: 501.3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d7{
+  height: 257.6px;
+  width: 100%;
+}
+.d7 h2{
+  font-size: 42px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #222222;
+  margin-bottom: 10px;
+}
+.d7 p{
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.d7 a{
+  font-size: 12px;
+  font-family: 'Mulish', sans-serif;
+  color: #222222;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+
+
+
+
+.main4{
+  height: 1350px;
+  width: 100%;
+  padding-top: 50px;
+}
+.main4 h2{
+  font-size: 24px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #222222;
+}
+.main4 h5{
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  color: #555555;
+  margin-top: 10px;
+}
+.d9{
+  height: 532.8px;
+  width: 1170px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.d10{
+  height: 100%;
+  width: 360px;
+  padding: 0px 15px;
+  background-image:url(https://xstore.b-cdn.net/elementor/demos/home-decor/wp-content/uploads/sites/9/2019/09/img-05.jpg);
+  background-size:100% 100%;
+}
+.d11{
+  height: 100%;
+  width: 360px;
+  padding: 0px 15px;
+  background-image:url(https://xstore.b-cdn.net/elementor/demos/home-decor/wp-content/uploads/sites/9/2019/09/img-06.jpg);
+  background-size:100% 100%;
+}
+.d12{
+  height: 100%;
+  width: 360px;
+  padding: 0px 15px;
+  background-image:url(https://xstore.b-cdn.net/elementor/demos/home-decor/wp-content/uploads/sites/9/2019/09/img-07.jpg);
+  background-size:100% 100%;
+}
+.d13{
+  height: 100%;
+  width: 360px;
+  padding: 0px 15px;
+  background-image:url(https://xstore.b-cdn.net/elementor/demos/home-decor/wp-content/uploads/sites/9/2019/09/img-08.jpg);
+  background-size:100% 100%;
+}
+.d14{
+  height: 100%;
+  width: 360px;
+  padding: 0px 15px;
+  background-image:url(https://xstore.b-cdn.net/elementor/demos/home-decor/wp-content/uploads/sites/9/2019/09/img-09.jpg);
+  background-size:100% 100%;
+}
+.d15{
+  height: 100%;
+  width: 360px;
+  padding: 0px 15px;
+  background-image:url(https://xstore.b-cdn.net/elementor/demos/home-decor/wp-content/uploads/sites/9/2019/09/img-10.jpg);
+  background-size:100% 100%;
+}
+.d16{
+  height: 100px;
+  width: 100%;
+  margin-top: 50px;
+}
+.d16 h4{
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #222222;
+  margin: 0px 0px 2px;
+}
+.d16 p{
+  font-size: 17px;
+  font-family: 'Mulish', sans-serif;
+
+}
+
+
+
+
+.main5{
+  height: 160px;
+  width: 100%;
+  margin-top: 100px;
+}
+.main5 h2{
+  font-size: 32px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #222222;
+  margin-bottom: 30px;
+
+}
+.main5 a{
+  font-size: 14px;
+  font-family: 'Mulish', sans-serif;
+  color: #222222;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+}
+
+
+
+
+
+.main6{
+  height: 333px;
+  width: 100%;
+  background-image: url(https://xstore.8theme.com/elementor/demos/home-decor/wp-content/uploads/sites/9/2019/10/Image.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: top;
+  background-color: #E6F3E7;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.main6 p{
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #222222;
+  margin-left: 200px;
+}
+.main6 h2{
+  font-size: 42px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #a3cc9e;
+  margin-left: 200px;
+  margin-top: 10px;
+}
+.main6 span{
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  color: #555555;
+  margin-left: 200px;
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+
+
+
+
+.main7{
+  height: 1500px;
+  width: 100%;
+  padding-top: 100px;
+}
+.main7 h2{
+  font-size: 24px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  color: #222222;
+  margin-bottom: 10px;
+}
+.main7 p{
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  color: #555555;
+  margin-bottom: 50px;
+
+}
+.d17{
+  height: 402.24px;
+  width: 1169.6px;
+  display: flex;
+}
+.d18{
+  height: 100%;
+  width: 292.5px;
+  padding: 0px 15px;
+  transition: 1s;
+}
+.d18 img{
+  height: 262.5px;
+  width: 262.5px;
+  margin-bottom: 10px;
+  transition: 1s;
+
+}
+.d18 a{
+  font-size: 16px;
+  color: #888888;
+  font-family: 'Mulish', sans-serif;
+  text-decoration: none;
+}
+.d18 h3{
+  font-size: 17.96px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.d18 span{
+  font-size: 16px;
+  color: #888888;
+  font-family: 'Mulish', sans-serif;
+
+}
+.d18 img:hover{
+  transform: scale(0.9);
+}
+.d18:hover{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transform: scale(1.1);
+  background-color: white;
+}
+
+
+
+
+.main8{
+  height: 248.4px;
+  width: 1142px;
+  background-image: url(https://xstore.8theme.com/elementor/demos/home-decor/wp-content/uploads/sites/9/2019/09/img-14.jpg);
+  background-size: cover;
+  transition: 1s;
+}
+.d19{
+  height:100%;
+  width:  475.4px;
+  margin-left: 58%;
+  display: flex;
+  align-items: center;
+}
+.d19 h2{
+  font-size: 46px;
+  color: #d9d9b4;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: 1s;
+}
+.main8:hover h2{
+  transform: scale(1.1);
+}
+
+
+
+footer{
+  height: 380.85px;
+  width: 100%;
+  margin-top: 90.4px;
+  padding: 55.86px 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfeff7;
+}
+.f1{
+  height: 233.6px;
+  width: 285px;
+}
+.f1-0{
+  height: 56px;
+  width: 170px;
+
+}
+.f1 p{
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  color: #222222;
+  margin-top: 20px;
+}
+.f1 ul li{
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  color: #222222;
+  margin-top: 20px;
+}
+.f1 h2{
+  font-size: 24px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #222222;
+}
+.f1 input{
+  background-color: white;
+  color: #222222;
+  height: 40px;
+  width: 206.59px;
+  border: none;
+  padding: 0px 18px;
+  margin-top: 10px;
+}
+.f1-1{
+  height: 21px;
+  width: 225px;
+  margin-top: 20px;
+}
+.f2{
+  margin-top: -40px;
+}
+.f2 span{
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  color: #222222;
+}
